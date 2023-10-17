@@ -1,4 +1,57 @@
 {% extends "base.html" %}
 
 {% block title %}Kuldeep IceCreams{% endblock title %}
-{% block body %}This is body block{% endblock body %}
+{% block body %}
+    <div class='container-fluid px-0'>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1280x450/?icecream" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Checkout Our Wide Range of IceCream falvours</h5>
+                  <p>Available in various falvours.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/1280x450/?ice cream" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Home Delivery Available</h5>
+                  <p>Home delivery is free for order above 500.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/1280x450/?icecream vanilla" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Availabel on Zomato and Swiggy</h5>
+                  <p>You can also order our icecreams through zomato and swiggy delivery.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <h1 class='my-4 text-center'> Select From Our Range of Ice-creams</h1>
+    <div class='container-fluid m-10'>
+        <div class="card text-center" style="width: 18rem;">
+            <img src="https://www.seriouseats.com/thmb/psLdr3356yqqFcm1o1_zxQ4YxEY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/best-dark-chocolate-ice-cream-recipe-hero-446dacb9d3ce443e8e9880dbd095ef4c.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate</h5>
+              <p class="card-text">Authentic Chocolate Falvour With Nuts and Dry-Fruits</p>
+              <p class="card-text">Rs. 50</p>
+              <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+          </div>
+    </div>
+{% endblock body %}

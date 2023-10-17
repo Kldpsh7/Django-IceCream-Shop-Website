@@ -1,4 +1,31 @@
 {% extends "base.html" %}
 
 {% block title %}Contact Us{% endblock title %}
-{% block body %}This is contact us page body{% endblock body %}
+{% block body %}
+<div class='container-fluid px-0'>
+    <img src="https://source.unsplash.com/1280x300/?phone,contact" class="d-block w-100" alt="...">
+    <h1 class='text-center'>Contatc Us<h1>
+</div>
+<div class='container'>
+    <form method='post' action='/contact'>
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputName" name='name' aria-describedby="emailHelp">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name='email' aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPhone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="exampleInputPhone" name=phone aria-describedby="emailHelp">
+          </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Agree to receive call or email from us</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+{% endblock body %}
